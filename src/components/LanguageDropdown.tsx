@@ -49,7 +49,7 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                         </>
                     }
                 >
-                    <ul className="flex flex-col gap-2 !px-2 font-semibold text-dark dark:text-white-dark dark:text-white-light/90">
+                    <ul className="flex flex-col gap-2 !px-2 font-semibold text-white">
                         {languageList.map((item: any) => {
                             return (
                                 <li key={item.code}>
