@@ -56,10 +56,10 @@ const EmailSection = () => {
           {t('contact_me_text')}
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/lkasvr">
+          <Link href="https://github.com/lkasvr" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/lucas-vieira-fr98">
+          <Link href="https://www.linkedin.com/in/lucas-vieira-fr98" target="_blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
