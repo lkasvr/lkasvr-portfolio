@@ -19,8 +19,6 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
     const router = useRouter();
     const { i18n } = getTranslation();
     const { incrementTypeAnimationKey } = useContext(TranslateContext);
-    console.log('i18n.language', i18n.language);
-
 
     return (
         <div className={`dropdown ${className}`}>

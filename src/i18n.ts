@@ -27,6 +27,8 @@ export const getTranslation = () => {
         i18n.changeLanguage(lang || themeLocale);
     };
 
+    initLocale(lang);
+
     const i18n = {
         language: lang,
         changeLanguage: (lang: string) => {
