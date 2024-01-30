@@ -7,11 +7,6 @@ import Navbar from "@/components/Navbar";
 import ProjectsSection from "@/components/ProjectsSection";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: 'Lucas Vieira',
-  description: 'Developer Portfolio',
-}
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
