@@ -26,7 +26,9 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                 <Dropdown
                     offset={[0, 8]}
                     placement="bottom-start"
-                    btnClassName="flex items-center gap-2.5 rounded-lg border border-white-dark/30 bg-[#121212] px-2 py-1.5 text-white-dark hover:border-primary hover:text-primary"
+                    btnClassName={
+                        `flex items-center gap-2.5 rounded-lg border border-white-dark/30 bg-[#121212] px-2 py-1.5 ${i18n.language === 'br' ? 'border-secondary-500' : 'border-primary-500'}`
+                    }
                     button={
                         <>
                             <div>
@@ -54,7 +56,7 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                                     <button
                                         type="button"
                                         className={
-                                            `flex w-full rounded-lg hover:text-primary ${i18n.language === item.code ? 'bg-primary/10 text-primary' : ''}`
+                                            `flex w-full rounded-lg hover:text-primary ${i18n.language === item.code ? 'bg-primary/10 text-primary-500' : ''}`
                                         }
                                         onClick={() => {
                                             const lang = item.code as string;
