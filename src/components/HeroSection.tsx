@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -10,11 +10,13 @@ import { TranslateContext } from "@/app/template";
 const HeroSection = () => {
   const { t, i18n } = getTranslation();
   const { typeAnimationKey } = useContext(TranslateContext);
+  const [cvLink, setCvLink] = useState('');
 
-  const handleCVDownload = () => {
-    const language = i18n.language as string;
-    return window.open(`${window.location.href}CV/DEV_${language.toUpperCase()}.pdf`);
-  }
+  useEffect(() => {
+    const language = i18n.language;
+    if (window && language)
+      setCvLink(`${window.location.href}CV/DEV_${language.toUpperCase()}.pdf`);
+  }, [i18n.language])
 
   return (
     <section className="lg:py-16">
@@ -62,18 +64,17 @@ const HeroSection = () => {
             >
               {t("hire_me")}
             </Link>
-            <Link
-              href="/"
+            <a
+              href={cvLink}
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              target="_blank"
             >
-              <button
+              <span
                 className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
-                onClick={handleCVDownload}
-
               >
                 Download CV
-              </button>
-            </Link>
+              </span>
+            </a>
           </div>
         </motion.div>
         <motion.div

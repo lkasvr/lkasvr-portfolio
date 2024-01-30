@@ -31,10 +31,12 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                     button={
                         <>
                             <div>
-                                <img
+                                <Image
                                     src={`/images/flags/${i18n.language.toUpperCase()}.svg`}
                                     alt="image"
                                     className="h-5 w-5 rounded-full object-cover"
+                                    width={21}
+                                    height={15}
                                 />
                             </div>
                             <div className="text-base font-bold uppercase">{i18n.language}</div>
@@ -56,15 +58,18 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                                             `flex w-full rounded-lg hover:text-primary ${i18n.language === item.code ? 'bg-primary/10 text-primary' : ''}`
                                         }
                                         onClick={() => {
-                                            i18n.changeLanguage(item.code);
+                                            const lang = item.code as string;
+                                            i18n.changeLanguage(lang);
                                             incrementTypeAnimationKey();
                                             router.refresh();
                                         }}
                                     >
-                                        <img
+                                        <Image
                                             src={`/images/flags/${item.code.toUpperCase()}.svg`}
                                             alt="flag"
                                             className="h-5 w-5 rounded-full object-cover"
+                                            width={21}
+                                            height={15}
                                         />
                                         <span className="ml-3 mr-3">{item.name}</span>
                                     </button>

@@ -1,10 +1,10 @@
 'use client';
 
-import { createContext, useState } from "react";
+import { createContext } from "react";
 
 const initialContextValue = {
   typeAnimationKey: 0,
-  incrementTypeAnimationKey: () => initialContextValue.typeAnimationKey++
+  incrementTypeAnimationKey: () => initialContextValue.typeAnimationKey++,
 };
 
 export const TranslateContext = createContext(initialContextValue);
