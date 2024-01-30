@@ -29,5 +29,6 @@
     "oradv": "Oliveira & Rios advogados é um website corporativo em formato de blog confecionado especialmente para um escritório de advocacia. Seu ponto alto é o SEO que o mantém sendo um dos primeiros resultados em busca no Google, bem como não deixa nenhuma lacuna no que tange ao seu compartilhamento e e informações disponíveis em outras redes quando buscado ou compartilhado. Ademais, possui um CMS para gerenciamento de conteúdo o que preenche seu caráter de blog, funcionalidade solicitada para satisfazer o requisito de publicação de artigos jurídicos pelos membros do escritório",
     "prm": "A aplicação PRM (Professional Resource Management) é uma API Rest em Java com Spring Boot para registro e gerenciamento do contato profissionais e suas especialidades, mantendo duas entidades: o Contato e o Profissional relacionado com esse contato",
     "leadster": "Uma lading page que foi produto de uma avaliação técnica para posição de de desenvolvedor front-end",
-    "ads": "Análise e Desenvolvimento de Sistemas"
+    "ads": "Análise e Desenvolvimento de Sistemas",
+    "email_successfully": "Email enviado com sucesso!"
 }
