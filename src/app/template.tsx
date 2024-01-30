@@ -1,6 +1,7 @@
 'use client';
 
-import { createContext } from "react";
+import { getTranslation } from "@/i18n";
+import { createContext, useEffect } from "react";
 
 const initialContextValue = {
   typeAnimationKey: 0,
@@ -12,7 +13,9 @@ export const TranslateContext = createContext(initialContextValue);
 export default function Template({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const { initLocale } = getTranslation();
 
+  useEffect(() => { initLocale('br') });
 
   return (
     <TranslateContext.Provider value={initialContextValue}>
