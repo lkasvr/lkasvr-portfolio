@@ -1,5 +1,6 @@
 import React from "react";
 import NavLink from "./NavLink";
+import LanguageOverlay from "./LanguageOverlay";
 
 interface MenuOverlayProps {
   links: {
@@ -16,6 +17,9 @@ const MenuOverlay = ({ links }: MenuOverlayProps) => {
           <NavLink href={link.path} title={link.title} />
         </li>
       ))}
+      <li>
+        <LanguageOverlay />
+      </li>
     </ul>
   );
 };

@@ -9,8 +9,9 @@
     "hero_desc": "Para mim, a tecnologia é um meio de trazer qualidade de vida às pessoas, permitindo-lhes imaginar mais e repetir menos a solução já elaborada",
     "hire_me": "Contate-me",
     "about_me": "Sobre mim",
-    "about_me_text_1": "Meu nome é Lucas Vieira, sou um desenvolvedor com foco nas linguagens Java e Javascript. Java porque gosto de atuar com backend e JS porque além de utilizá-la no backend, também posso com conhecimento aprofundado trabalhar em um nível mais complexo de aplicações Web e Mobile, utilizando técnicas PWA, além de me fornecer um ecossistema rico em frameworks para front-end.",
-    "about_me_text_2": "Ademais, tenho grande interesse na literatura sobre desenvolvimento de software e é uma área que também me dedico a aperfeiçoar, como práticas de desenvolvimento Ágeis, Clean Code, Design Patterns sendo meus livros favoritos nesse tema: Arquitetura Limpa (Robert C. Martin) e Padrões de Projeto (Erich Gama)",
+    "about_me_text_1": "Meu nome é Lucas Vieira, sou um desenvolvedor Full Stack com foco principal nas linguagens Java e JavaScript. Escolhi Java por gostar de trabalhar no backend, criando APIs RESTful escaláveis e de alta performance com frameworks como Quarkus e Spring Boot. Também utilizo banco de dados relacionais como PostgreSQL e SQL, além de NoSQL como Redis para cache distribuído.",
+    "about_me_text_2": "Para garantir qualidade, adoto boas práticas como TDD, Design Patterns e princípios SOLID. Construo meus serviços com arquitetura de microsserviços e containers Docker.",
+    "about_me_text_3": "No front-end, domino JavaScript ao nível avançado, incluindo paradigmas de programação funcional. Minha stack principal é React, React Native, Next.js com Typescript. Também utilizo Redux, Jest, Tailwind CSS e integro com headless CMSs como Strapi.",
     "skills": "Habilidades",
     "education": "Educação",
     "certifications": "Certificados",
@@ -30,5 +31,7 @@
     "prm": "A aplicação PRM (Professional Resource Management) é uma API Rest em Java com Spring Boot para registro e gerenciamento do contato profissionais e suas especialidades, mantendo duas entidades: o Contato e o Profissional relacionado com esse contato",
     "leadster": "Uma lading page que foi produto de uma avaliação técnica para posição de de desenvolvedor front-end",
     "ads": "Análise e Desenvolvimento de Sistemas",
-    "email_successfully": "Email enviado com sucesso!"
+    "email_successfully": "Email enviado com sucesso!",
+    "en": "Inglês",
+    "br": "Português"
 }

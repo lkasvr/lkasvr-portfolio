@@ -9,8 +9,9 @@
     "hero_desc": "For me, technology is a way of bringing quality of life to people, allowing them to imagine more and repeat less of the solution already worked out",
     "hire_me": "Hire me",
     "about_me": "About Me",
-    "about_me_text_1": "My name is Lucas Vieira, I'm a developer focusing on Java and Javascript languages. Java because I like to work on the backend and JS because, as well as using it on the backend, I can also, with in-depth knowledge, work on a more complex level of Web and Mobile applications, using PWA techniques, as well as providing me with a rich ecosystem of front-end frameworks.",
-    "about_me_text_2": "In addition, I have a great interest in the literature on software development and it is an area that I am also dedicated to perfecting, such as Agile development practices, Clean Code, Design Patterns. My favorite books on this subject are: Clean Architecture (Robert C. Martin) and Design Patterns (Erich Gama).",
+    "about_me_text_1": "My name is Lucas Vieira. I'm a Full Stack developer focused on Java and JavaScript. I chose Java because I enjoy creating scalable, high-performance backend RESTful APIs with frameworks like Quarkus and Spring Boot. I also use relational databases like PostgreSQL and SQL, as well as NoSQL like Redis for distributed caching.",
+    "about_me_text_2": "To ensure quality, I adopt good practices like TDD, Design Patterns, and SOLID principles. I build my services with a microservices architecture and Docker containers.",
+    "about_me_text_3": "On the front-end side, I have an advanced mastery of JavaScript, including functional programming paradigms. My primary stack is React, React Native, Next.js with Typescript. I also use Redux, Jest, Tailwind CSS and integrate with headless CMSs like Strapi.",
     "skills": "Skills",
     "education": "Education",
     "certifications": "Certifications",
@@ -29,5 +30,7 @@
     "prm": "The PRM (Professional Resource Management) application is a Rest API in Java with Spring Boot for registering and managing professional contacts and their specialties, maintaining two entities: the Contact and the Professional related to that contact",
     "leadster": "A lading page that was the product of a technical assessment for a front-end developer position",
     "ads": "Systems Analysis and Development",
-    "email_successfully": "Email sent successfully!"
+    "email_successfully": "Email sent successfully!",
+    "en": "English",
+    "br": "Portuguese"
 }

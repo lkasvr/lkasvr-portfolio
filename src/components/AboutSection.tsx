@@ -131,6 +131,11 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg text-justify">
             {t('about_me_text_2')}
           </p>
+          <br />
+          <p className="text-base lg:text-lg text-justify">
+            {t('about_me_text_3')}
+          </p>
+          <br />
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}

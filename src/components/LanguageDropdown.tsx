@@ -11,13 +11,13 @@ interface LanguageDropdownProps {
 }
 
 const languageList = [
-    { code: 'en', name: 'English' },
-    { code: 'br', name: 'Português' }
+    { code: 'en' },
+    { code: 'br' }
 ];
 
 const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
     const router = useRouter();
-    const { i18n } = getTranslation();
+    const { t, i18n } = getTranslation();
     const { incrementTypeAnimationKey } = useContext(TranslateContext);
 
     return (
@@ -56,7 +56,17 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                                     <button
                                         type="button"
                                         className={
-                                            `flex w-full rounded-lg hover:text-primary ${i18n.language === item.code ? 'bg-primary/10 text-primary-500' : ''}`
+                                            `flex w-full rounded-lg hover:text-primary 
+                                            ${i18n.language === item.code && item.code === 'en'
+                                            && 'bg-primary-500/10 text-primary-500'
+                                            }
+                                            ${i18n.language === item.code && item.code === 'br'
+                                            && 'bg-secondary-500/10 text-secondary-500'
+                                            }
+                                            ${item.code === 'br'
+                                                ? 'hover:text-secondary-500'
+                                                : 'hover:text-primary-500'
+                                            }`
                                         }
                                         onClick={() => {
                                             const lang = item.code as string;
@@ -72,7 +82,7 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                                             width={21}
                                             height={15}
                                         />
-                                        <span className="ml-3 mr-3">{item.name}</span>
+                                        <span className="ml-3 mr-3">{t(item.code)}</span>
                                     </button>
                                 </li>
                             );
