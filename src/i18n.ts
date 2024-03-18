@@ -9,6 +9,7 @@ export const getLang = () => {
     if (typeof window !== 'undefined') {
         const cookies = new cookieObj.default(null, { path: '/' });
         lang = cookies.get('i18nextLng');
+        if(!lang) lang = 'br'
     } else {
         const cookies = cookieObj.cookies();
         lang = cookies.get('i18nextLng')?.value;

@@ -56,7 +56,7 @@ const LanguageDropdown = ({ className = '' }: LanguageDropdownProps) => {
                                     <button
                                         type="button"
                                         className={
-                                            `flex w-full rounded-lg hover:text-primary 
+                                            `flex w-full rounded-lg hover:text-primary
                                             ${i18n.language === item.code && item.code === 'en'
                                             && 'bg-primary-500/10 text-primary-500'
                                             }

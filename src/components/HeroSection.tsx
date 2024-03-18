@@ -14,8 +14,13 @@ const HeroSection = () => {
 
   useEffect(() => {
     const language = i18n.language;
-    if (window && language)
-      setCvLink(`${window.location.href}CV/DEV_${language.toUpperCase()}.pdf`);
+    if (window) {
+      if(language) {
+        setCvLink(`${window.location.href}CV/DEV_${language.toUpperCase()}.pdf`);
+      } else {
+        setCvLink(`${window.location.href}CV/DEV_BR.pdf`);
+      }
+    }
   }, [i18n.language])
 
   return (
